@@ -2,6 +2,7 @@
 import { Component, Vue } from 'vue-property-decorator';
 import style from './style/App.less'
 import Tab from './components/Tab'
+import My from './view/my/my'
 @Component 
 export default class App extends Vue {
 

@@ -4,7 +4,7 @@ import style from '../style/App.less'
 export default class App extends Vue{
 
     public Tab:Array<String> = ['首页','我的']
-           route:Array<String>  = ['/my','/mina']   
+           route:Array<String>  = ['/my','/Main']   
     protected render() {
       const Tab = this.Tab.map((item:String,index:any)=>{
           return(
