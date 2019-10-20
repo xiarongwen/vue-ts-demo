@@ -2,7 +2,6 @@
 import { Component, Vue } from 'vue-property-decorator';
 import style from './style/App.module.less'
 import Tab from './components/Tab/Tab'
-import My from './view/my/my'
 
 import TopNav from './components/TopNav/Nav'
 @Component 
