@@ -1,6 +1,6 @@
 // 入口文件
 import { Component, Vue } from 'vue-property-decorator';
-import style from './style/App.less'
+import style from './style/App.module.less'
 import Tab from './components/Tab/Tab'
 import My from './view/my/my'
 
@@ -12,7 +12,7 @@ export default class App extends Vue {
     return(
         <div>
             <TopNav></TopNav>
-            <router-view></router-view>
+            <router-view class={style.pages}></router-view>
             <Tab></Tab>
         </div>
     );

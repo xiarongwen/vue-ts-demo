@@ -1,5 +1,5 @@
 import { Component, Vue,Prop } from 'vue-property-decorator';
-
+import style from './style/NavStyle.module.less'
 @Component
 
 export default class App extends Vue{
@@ -13,10 +13,13 @@ export default class App extends Vue{
     protected render(){
       return(
           <div>
-              {/* 返回上一页按钮 */}
-              <div onClick={this.back}> 上一页 </div>
-              <div>
-                  {this.title}
+              <div class={style.topNav}>
+                {/* 返回上一页按钮 */}
+                <div class={style.back} onClick={this.back}> 上一页 </div>
+                <div class={style.title}>
+                    猫眼电影
+                    {this.title}
+                </div>
               </div>
           </div>
       );
